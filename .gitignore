@@ -1,0 +1,19 @@
+# Python 가상환경
+.venv/
+venv/
+ENV/
+env/
+
+# Python 캐시 파일
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 개발 툴 설정 및 임시 파일
+.antigravitycli/
+.idea/
+.vscode/
+
+# 환경 변수 및 설정 파일
+.env
