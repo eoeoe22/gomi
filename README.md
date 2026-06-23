@@ -15,6 +15,19 @@ Gemma3 Pretrained 모델 기반의 무한 개소리 생성기
 # 사양
 RTX 5070 laptop (VRAM 8GB) 환경에서 원할한 구동이 가능했습니다.
 
+# 실행 방법
+## 로컬 (Windows / Linux)
+`gomi.py` 를 사용합니다. Windows 는 `run.bat` 으로 가상환경 활성화 후 실행할 수 있습니다.
+
+## Google Colab (T4 GPU)
+`gomi_colab.ipynb` 노트북을 Colab 에서 열어 사용합니다.
+1. [Colab](https://colab.research.google.com/) 에서 `gomi_colab.ipynb` 업로드/열기
+2. 상단 메뉴 **런타임 → 런타임 유형 변경 → 하드웨어 가속기: T4 GPU**
+3. 셀을 위에서부터 순서대로 실행 (Gemma 라이선스 동의 + HF 토큰 필요)
+
+> T4(Turing) 는 bf16 을 네이티브로 지원하지 않아 Colab 버전은 fp16 으로 동작합니다.
+> 키보드 일시정지/ESC 기능 대신 Colab 의 ■ 중지 버튼으로 종료합니다.
+
 
 # 실제 출력 결과물
 시드 : 스타크래프트 립버전 1.16.1다운
